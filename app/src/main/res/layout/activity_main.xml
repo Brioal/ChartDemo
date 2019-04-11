@@ -1,0 +1,323 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <com.github.mikephil.charting.charts.LineChart
+            android:id="@+id/chart1"
+            android:layout_width="match_parent"
+            android:layout_height="300dp">
+
+        </com.github.mikephil.charting.charts.LineChart>
+
+        <com.brioal.linebreadview.LineBreakViewGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <Switch
+                android:id="@+id/main_cb1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:text="右Y轴"/>
+
+            <Switch
+                android:id="@+id/main_cb2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:text="X轴网格"/>
+
+            <Switch
+                android:id="@+id/main_cb3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:text="Y轴网格"/>
+
+            <Switch
+                android:id="@+id/main_cb4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:text="线条填充"/>
+
+            <Switch
+                android:id="@+id/main_cb5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:text="端点显示数值"/>
+
+            <Switch
+                android:id="@+id/main_cb6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:text="X轴动画"/>
+
+            <Switch
+                android:id="@+id/main_cb7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:text="Y轴动画"/>
+
+            <Spinner
+                android:id="@+id/main_sp8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:entries="@array/line_type">
+            </Spinner>
+
+            <Switch
+                android:id="@+id/main_cb9"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:text="第二条线"/>
+
+            <Switch
+                android:id="@+id/main_cb10"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:text="X轴标签"/>
+
+            <Switch
+                android:id="@+id/main_cb12"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:text="Y轴标签"/>
+
+            <Switch
+                android:id="@+id/main_cb11"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:text="固定线"/>
+
+            <Switch
+                android:id="@+id/main_cb13"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:text="顶点圆点"/>
+
+            <Switch
+                android:id="@+id/main_cb14"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:text="显示边界"/>
+
+            <Switch
+                android:id="@+id/main_cb16"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:text="图例"/>
+
+            <Switch
+                android:id="@+id/main_cb17"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:text="描述"/>
+
+            <Button
+                android:id="@+id/main_btn15"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="刷新随机数"/>
+        </com.brioal.linebreadview.LineBreakViewGroup>
+
+
+        <com.github.mikephil.charting.charts.BarChart
+            android:id="@+id/chart2"
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:layout_marginTop="200dp">
+
+        </com.github.mikephil.charting.charts.BarChart>
+
+        <com.brioal.linebreadview.LineBreakViewGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <Switch
+                android:id="@+id/main_cb18"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:text="边框"/>
+
+            <Switch
+                android:id="@+id/main_cb20"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:text="X轴标签"/>
+
+            <Switch
+                android:id="@+id/main_cb21"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:text="X轴网格"/>
+
+            <Switch
+                android:id="@+id/main_cb22"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:text="右边Y轴"/>
+
+            <Switch
+                android:id="@+id/main_cb23"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:text="Y轴标签"/>
+
+            <Switch
+                android:id="@+id/main_cb24"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:text="Y轴网格"/>
+
+            <Switch
+                android:id="@+id/main_cb25"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:text="顶点数值"/>
+
+            <Switch
+                android:id="@+id/main_cb26"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:text="图例"/>
+
+            <Switch
+                android:id="@+id/main_cb27"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:text="描述"/>
+
+            <Switch
+                android:id="@+id/main_cb28"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:text="固定线"/>
+
+            <Switch
+                android:id="@+id/main_cb29"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:text="X轴动画"/>
+
+            <Switch
+                android:id="@+id/main_cb30"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:text="Y轴动画"/>
+
+
+            <Button
+                android:id="@+id/main_btn19"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="刷新随机数"/>
+        </com.brioal.linebreadview.LineBreakViewGroup>
+
+
+        <com.github.mikephil.charting.charts.PieChart
+            android:id="@+id/chart3"
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:layout_marginTop="200dp">
+
+        </com.github.mikephil.charting.charts.PieChart>
+
+        <com.brioal.linebreadview.LineBreakViewGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <Switch
+                android:id="@+id/main_cb32"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:text="X轴动画"/>
+
+            <Switch
+                android:id="@+id/main_cb33"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:text="Y轴动画"/>
+
+            <Switch
+                android:id="@+id/main_cb34"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:text="实心"/>
+
+            <Switch
+                android:id="@+id/main_cb35"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:text="隐藏最一块"/>
+
+            <Switch
+                android:id="@+id/main_cb36"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:text="边距"/>
+
+            <Switch
+                android:id="@+id/main_cb37"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:text="标签外部显示"/>
+
+            <Switch
+                android:id="@+id/main_cb38"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:text="值外部显示"/>
+
+            <Button
+                android:id="@+id/main_btn31"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="刷新随机数"/>
+        </com.brioal.linebreadview.LineBreakViewGroup>
+    </LinearLayout>
+
+
+</ScrollView>

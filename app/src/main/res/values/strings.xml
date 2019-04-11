@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">ChartDemo</string>
+    <string-array name="line_type">
+        <item>直线</item>
+        <item>曲线</item>
+        <item>梯度线</item>
+        <item>水平线条平滑</item>
+    </string-array>
+</resources>
